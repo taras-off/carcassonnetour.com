@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://carcassonnetour.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carcassonnetour.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://carcassonnetour.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carcassonnetour.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carcassonnetour.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://carcassonnetour.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://carcassonnetour.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carcassonnetour.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://carcassonnetour.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carcassonnetour.com/"/>
+  </url>
+  <url><loc>https://carcassonnetour.com/fr/</loc></url>
+  <url><loc>https://carcassonnetour.com/de/</loc></url>
+  <url><loc>https://carcassonnetour.com/es/</loc></url>
+  <url><loc>https://carcassonnetour.com/it/</loc></url>
+  <url><loc>https://carcassonnetour.com/pt/</loc></url>
+  <url><loc>https://carcassonnetour.com/pl/</loc></url>
+  <url><loc>https://carcassonnetour.com/ru/</loc></url>
+  <url><loc>https://carcassonnetour.com/guides/</loc></url>
+  <url><loc>https://carcassonnetour.com/privacy-policy.html</loc></url>
+  <url><loc>https://carcassonnetour.com/affiliate-disclosure.html</loc></url>
+</urlset>
