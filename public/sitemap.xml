@@ -21,6 +21,32 @@
   <url><loc>https://carcassonnetour.com/pl/</loc></url>
   <url><loc>https://carcassonnetour.com/ru/</loc></url>
   <url><loc>https://carcassonnetour.com/guides/</loc></url>
+  <url><loc>https://carcassonnetour.com/fr/guides/</loc></url>
+  <url><loc>https://carcassonnetour.com/de/guides/</loc></url>
+  <url><loc>https://carcassonnetour.com/es/guides/</loc></url>
+  <url><loc>https://carcassonnetour.com/it/guides/</loc></url>
+  <url><loc>https://carcassonnetour.com/pt/guides/</loc></url>
+  <url><loc>https://carcassonnetour.com/pl/guides/</loc></url>
+  <url><loc>https://carcassonnetour.com/ru/guides/</loc></url>
   <url><loc>https://carcassonnetour.com/privacy-policy.html</loc></url>
   <url><loc>https://carcassonnetour.com/affiliate-disclosure.html</loc></url>
+  <url>
+    <loc>https://carcassonnetour.com/one-day-in-carcassonne/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carcassonnetour.com/one-day-in-carcassonne/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://carcassonnetour.com/fr/one-day-in-carcassonne/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carcassonnetour.com/de/one-day-in-carcassonne/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carcassonnetour.com/es/one-day-in-carcassonne/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://carcassonnetour.com/it/one-day-in-carcassonne/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://carcassonnetour.com/pt/one-day-in-carcassonne/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carcassonnetour.com/pl/one-day-in-carcassonne/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://carcassonnetour.com/ru/one-day-in-carcassonne/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carcassonnetour.com/one-day-in-carcassonne/"/>
+  </url>
+  <url><loc>https://carcassonnetour.com/fr/one-day-in-carcassonne/</loc></url>
+  <url><loc>https://carcassonnetour.com/de/one-day-in-carcassonne/</loc></url>
+  <url><loc>https://carcassonnetour.com/es/one-day-in-carcassonne/</loc></url>
+  <url><loc>https://carcassonnetour.com/it/one-day-in-carcassonne/</loc></url>
+  <url><loc>https://carcassonnetour.com/pt/one-day-in-carcassonne/</loc></url>
+  <url><loc>https://carcassonnetour.com/pl/one-day-in-carcassonne/</loc></url>
+  <url><loc>https://carcassonnetour.com/ru/one-day-in-carcassonne/</loc></url>
 </urlset>
