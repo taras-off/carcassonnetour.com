@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Tej strony nie ma</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Jeszcze jej nie opublikowano albo link jest błędny.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<style>
+:root{
+  --brand:#2d9cdf; --brand-d:#15688f; --btn:#1a7ab0;
+  --ink:#16202a; --muted:#5c6b78; --line:#e4ebf0; --soft:#f2f8fc; --star:#f5a623;
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);line-height:1.6;background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--brand-d);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+h2{font-size:1.75rem;margin-top:0}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.lead{color:var(--muted);font-size:1.06rem;max-width:70ch}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;font-weight:700;color:var(--brand-d);margin:0 0 .6em}
+.ph{position:relative;background:linear-gradient(135deg,#dcecf7 0%,#bcd9ee 45%,#9ec9e6 100%);border-radius:12px;overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+.btn{display:inline-block;background:var(--btn);color:#fff;padding:13px 22px;border-radius:10px;font-weight:700;
+  border:0;cursor:pointer;text-align:center;transition:filter .15s}
+.btn:hover{filter:brightness(1.08);text-decoration:none;color:#fff}
+.btn.ghost{background:#fff;color:var(--brand-d);border:2px solid var(--brand)}
+.btn.ghost:hover{background:var(--soft)}
+.btn.white{background:#fff;color:var(--brand-d)}
+.btn.white:hover{background:#eaf4fb;color:var(--brand-d)}
+.btn.block{display:block;width:100%}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+
+/* header */
+header.site{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.2) blur(6px);
+  border-bottom:1px solid var(--line)}
+.nav{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:10px 20px;max-width:var(--wrap);margin:0 auto}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:1.05rem;color:var(--ink);white-space:nowrap}
+.brand img{width:34px;height:34px;border-radius:8px}
+.brand span{color:var(--brand-d)}
+.menu{position:relative}
+.menu>summary{list-style:none;cursor:pointer;font-weight:600;font-size:.92rem;color:var(--ink);padding:8px 10px;border-radius:8px}
+.menu>summary::-webkit-details-marker{display:none}
+.menu>summary:hover{background:var(--soft)}
+.menu .dd{position:absolute;top:110%;left:0;background:#fff;border:1px solid var(--line);border-radius:12px;
+  box-shadow:0 10px 30px rgba(15,35,48,.14);padding:8px;min-width:250px;z-index:50}
+.menu .dd a{display:block;padding:9px 12px;border-radius:8px;color:var(--ink);font-size:.92rem}
+.menu .dd a:hover{background:var(--soft);text-decoration:none}
+.menu .dd a.all{color:var(--brand-d);font-weight:700;border-top:1px solid var(--line);margin-top:4px}
+.nav .spacer{margin-left:auto}
+.lang{display:flex;flex-wrap:wrap;gap:4px;font-size:.82rem}
+.lang a{padding:6px 9px;border-radius:7px;color:var(--brand-d);border:1px solid var(--line)}
+.lang a[aria-current]{background:var(--brand-d);color:#fff}
+
+/* hero */
+.hero{position:relative;color:#fff;background:#0f3348}
+.hero .bg{position:absolute;inset:0}
+.hero .bg .ph{width:100%;height:100%;border-radius:0}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,32,46,.32),rgba(9,32,46,.8))}
+.hero .inner{position:relative;max-width:var(--wrap);margin:0 auto;padding:88px 20px 84px}
+.chip{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
+  padding:6px 13px;border-radius:20px;font-size:.85rem;font-weight:600;margin-bottom:16px}
+.chip .s{color:var(--star)}
+.hero h1{font-size:2.5rem;max-width:17ch;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.35)}
+.hero p.sub{font-size:1.15rem;max-width:54ch;color:#eaf4fb;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.hero .trust{margin-top:18px;font-size:.9rem;color:#d6e9f5}
+.hero .trust b{color:#fff}
+
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff}
+.card h3{font-size:1.12rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.chips li{font-size:.82rem;color:var(--brand-d);background:var(--soft);border:1px solid var(--line);padding:6px 11px;border-radius:20px;font-weight:600}
+
+.product{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
+.product .pinfo{border:1px solid var(--line);border-radius:16px;padding:26px;background:var(--soft)}
+.badge{display:inline-block;background:#e5f4c9;color:#3f5a1a;font-weight:700;font-size:.78rem;padding:4px 10px;border-radius:20px}
+.price{font-size:1.5rem;font-weight:800;margin:12px 0 4px}
+.price small{font-size:.85rem;color:var(--muted);font-weight:600}
+.feat{list-style:none;padding:0;margin:14px 0 0}
+.feat li{padding:6px 0 6px 26px;position:relative}
+.feat li::before{content:"✓";position:absolute;left:0;color:var(--brand-d);font-weight:800}
+
+.audio{background:var(--soft)}
+.player{margin-top:16px}
+audio{width:100%;max-width:540px}
+
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 20px;padding:0;list-style:none}
+.tabs button{border:1px solid var(--line);background:#fff;color:var(--brand-d);font-weight:700;padding:9px 16px;border-radius:22px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--brand-d);color:#fff;border-color:var(--brand-d)}
+.tabpanel{display:none}
+.tabpanel.on{display:block}
+
+.story .block{padding:26px 0;border-top:1px solid var(--line)}
+.story .block:first-of-type{border-top:0}
+.story h3{font-size:1.3rem}
+.inline-cta{margin-top:14px;padding:16px 18px;background:var(--soft);border:1px solid var(--line);border-radius:12px;display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+.inline-cta span{font-weight:600}
+
+.discover .card{padding:0;overflow:hidden}
+.discover .ph{height:190px;border-radius:0}
+.discover .card .body{padding:18px 20px}
+.discover .card h3{font-size:1.06rem;margin-bottom:.35em}
+.discover .card p{color:var(--muted);margin:0;font-size:.96rem}
+
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.steps li{position:relative;padding:22px 18px 18px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.steps li::before{counter-increment:s;content:counter(s);display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--brand-d);color:#fff;font-weight:800;margin-bottom:10px}
+.steps h3{font-size:1rem;margin:.2em 0}
+.steps p{margin:0;color:var(--muted);font-size:.92rem}
+
+.visit-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:26px;align-items:start}
+table.info{width:100%;border-collapse:collapse;margin-top:8px}
+table.info th,table.info td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+table.info th{width:150px;color:var(--brand-d);font-weight:700;background:var(--soft)}
+
+/* ticket box */
+.ticketbox{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.ticketbox .hd{background:var(--brand-d);color:#fff;padding:16px 20px;font-weight:800}
+.ticketbox .bd{padding:20px}
+.ticketbox .tprice{font-size:1.3rem;font-weight:800;margin:0 0 12px}
+.ticketbox .tprice small{font-weight:600;color:var(--muted);font-size:.82rem}
+.ticketbox ul{list-style:none;padding:0;margin:0 0 16px}
+.ticketbox li{padding:5px 0 5px 24px;position:relative;font-size:.95rem}
+.ticketbox li::before{content:"✓";position:absolute;left:0;color:var(--brand-d);font-weight:800}
+.ticketbox .fine{font-size:.8rem;color:var(--muted);margin:12px 0 0}
+
+/* partners */
+.partners{background:var(--soft)}
+.partners .card{padding:0;overflow:hidden}
+.partners .ph{height:150px;border-radius:0}
+.partners .body{padding:16px 18px}
+.plabel{text-transform:uppercase;letter-spacing:.06em;font-size:.72rem;font-weight:800;color:var(--brand-d)}
+.partners h3{font-size:1.05rem;margin:.3em 0}
+.partners .meta{color:var(--muted);font-size:.9rem;margin:0 0 14px}
+
+.review{border:1px solid var(--line);border-radius:14px;padding:20px;background:#fff}
+.stars{color:var(--star);letter-spacing:2px;font-size:1rem}
+.review p{margin:.5em 0 .8em}
+.review .who{font-size:.86rem;color:var(--muted);font-weight:600}
+
+.note{font-size:.86rem;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-top:16px}
+
+details.faq{border:1px solid var(--line);border-radius:12px;padding:2px 18px;margin-bottom:12px;background:#fff}
+details.faq summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";float:right;color:var(--brand-d);font-weight:800;font-size:1.2rem}
+details.faq[open] summary::after{content:"–"}
+details.faq p{margin:0 0 16px;color:var(--muted)}
+
+.authorbox{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.authorbox .avatar{width:120px;height:120px;border-radius:50%}
+.authorbox .avatar.ph{border-radius:50%}
+
+.final{background:linear-gradient(135deg,#15688f,#1a7ab0);color:#fff;text-align:center;border-bottom:0}
+.final h2{color:#fff;font-size:2rem}
+.final p{color:#e7f3fa;max-width:48ch;margin:0 auto 6px}
+
+footer.site{background:#0f2330;color:#c7d6e0;padding:52px 0 120px;border:0}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:30px}
+footer h3,footer h4{color:#fff;font-size:.95rem;margin-bottom:12px}
+footer a{color:#c7d6e0}
+footer a:hover{color:#fff}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin:7px 0;font-size:.92rem}
+footer .copy{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);font-size:.82rem;color:#9fb4c2}
+footer .lang a{color:#c7d6e0;border-color:rgba(255,255,255,.2)}
+
+.buybar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#0f2330;color:#fff;display:flex;align-items:center;gap:14px;justify-content:space-between;padding:11px 18px;box-shadow:0 -4px 18px rgba(0,0,0,.22)}
+.buybar .t{font-size:.9rem;color:#dbe8f1}
+.buybar .t b{color:#fff}
+.buybar .btn{padding:11px 20px}
+
+@media(max-width:860px){
+  .g2,.g3,.product,.authorbox,.visit-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:2rem}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+  .steps{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr}
+  .buybar .t{font-size:.82rem}
+  section{padding:44px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="/pl/"><img src="/img/logo.webp" alt="Logo Carcassonne Tour" width="34" height="34">Carcassonne<span>Tour</span></a>
+    <details class="menu">
+      <summary>Przewodniki ▾</summary>
+      <!-- Articles publish over time; until then these point to the guides index. -->
+      <div class="dd">
+        <a href="/pl/carcassonne-self-guided-walking-tour/">Audioprzewodnik</a>
+        <a href="/pl/what-to-see-in-carcassonne/">Co zobaczyć</a>
+        <a href="/pl/one-day-in-carcassonne/">Jeden dzień w Carcassonne</a>
+        <a href="/pl/chateau-comtal-carcassonne/">Zamek hrabiowski</a>
+        <a href="/pl/carcassonne-walls/">Mury obronne</a>
+        <a href="/pl/best-time-to-visit-carcassonne/">Kiedy jechać</a>
+        <a class="all" href="/pl/guides/">Wszystkie przewodniki →</a>
+      </div>
+    </details>
+    <div class="spacer"></div>
+    <div class="lang" aria-label="Language">
+      <a href="/">EN</a>
+      <a href="/fr/">FR</a><a href="/de/">DE</a><a href="/es/">ES</a>
+      <a href="/it/">IT</a><a href="/pt/">PT</a><a href="/pl/" aria-current="true">PL</a><a href="/ru/">RU</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="nf404" style="padding:64px 20px 72px;text-align:center"><div class="wrap" style="max-width:720px;margin:0 auto"><h1 style="font-size:clamp(30px,5vw,46px);margin-bottom:14px">Tej strony nie ma</h1><p class="lead" style="margin:0 auto 26px;max-width:560px">Jeszcze jej nie opublikowano albo link jest błędny.</p><p style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0"><a class="btn" href="/pl/">Pełny przewodnik</a> <a class="btn outline" href="/pl/guides/">Wszystkie przewodniki</a></p></div></section>
+</main>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="wrap">
+    <h2>Przejdź się po murach z każdą opowieścią w słuchawkach</h2>
+    <p>Odkryj wieże, oblężenia i legendy, których nigdy nie usłyszysz przy bramie.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn white bokunButton" href="https://widgets.bokun.io/online-sales/b5ee0995-ab34-469f-ac51-e53fdf1c8392/experience/901190?lang=pl&amp;utm_source=carcassonnetour&amp;utm_medium=landing&amp;utm_campaign=pl&amp;utm_content=home" data-src="https://widgets.bokun.io/online-sales/b5ee0995-ab34-469f-ac51-e53fdf1c8392/experience/901190?lang=pl&amp;partialView=1&amp;utm_source=carcassonnetour&amp;utm_medium=landing&amp;utm_campaign=pl&amp;utm_content=home">Weź audioprzewodnik — €9.99</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>Carcassonne<span style="color:var(--brand)">Tour</span></h3>
+        <p style="font-size:.9rem;max-width:32ch">Niezależny przewodnik po Cité de Carcassonne i jego audioprzewodniku na własną rękę. Projekt TouringBee.</p>
+      </div>
+      <div>
+        <h4>Odkrywaj</h4>
+        <ul>
+          <li><a href="#tour">Audioprzewodnik</a></li>
+          <li><a href="#story">Historia</a></li>
+          <li><a href="/pl/guides/">Wszystkie przewodniki</a></li>
+          <li><a href="https://touringbee.com/pl/shop-tbee-pl/?wpam_id=40&amp;utm_source=carcassonnetour&amp;utm_medium=referral&amp;utm_campaign=landing&amp;utm_content=footer">Wszystkie wycieczki</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informacje prawne</h4>
+        <ul>
+          <li><a href="/privacy-policy.html">Polityka prywatności</a></li>
+          <li><a href="https://touringbee.com/terms-and-conditions-of-use/">Warunki korzystania</a></li>
+          <li><a href="/affiliate-disclosure.html">Informacja o afiliacji</a></li>
+          <li><a href="https://touringbee.com/affiliate-home/">Zostań partnerem afiliacyjnym</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:info@touringbee.com">info@touringbee.com</a></li>
+          <li><a href="https://www.instagram.com/touringbeeapp" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@TouringBee" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+        <div class="lang" style="margin-top:14px">
+          <a href="/">EN</a><a href="/fr/">FR</a><a href="/de/">DE</a><a href="/es/">ES</a>
+          <a href="/it/">IT</a><a href="/pt/">PT</a><a href="/pl/" aria-current="true">PL</a><a href="/ru/">RU</a>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      © 2026 Carcassonne Tour · Projekt TouringBee (Touringbee Limited, Irlandia, nr firmy 660321).<br>
+      Ta witryna jest niezależna i nie jest powiązana z Cité de Carcassonne ani z lokalną administracją.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY BUY BAR ============ -->
+<div class="buybar">
+  <div class="t"><b>Audioprzewodnik po Carcassonne</b> · €9.99 · offline · po polsku</div>
+  <a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/b5ee0995-ab34-469f-ac51-e53fdf1c8392/experience/901190?lang=pl&amp;utm_source=carcassonnetour&amp;utm_medium=landing&amp;utm_campaign=pl&amp;utm_content=home" data-src="https://widgets.bokun.io/online-sales/b5ee0995-ab34-469f-ac51-e53fdf1c8392/experience/901190?lang=pl&amp;partialView=1&amp;utm_source=carcassonnetour&amp;utm_medium=landing&amp;utm_campaign=pl&amp;utm_content=home">Kup za €9.99</a>
+</div>
+
+<!-- ============ JSON-LD ============ -->
+
+
+<script>
+function showTab(n){
+  for(var i=1;i<=4;i++){
+    document.getElementById('t'+i).classList.toggle('on', String(i)===n);
+    document.getElementById('tb'+i).setAttribute('aria-selected', String(i)===n?'true':'false');
+  }
+}
+</script>
+<script>/* Bokun: load engine on first user interaction — keeps 3rd-party JS out of the Lighthouse run */
+(function(){var u="b5ee0995-ab34-469f-ac51-e53fdf1c8392",done=false,ev=["mouseover","touchstart","scroll","keydown","click"];
+function load(){if(done)return;done=true;ev.forEach(function(e){window.removeEventListener(e,load,{passive:true});});
+var s=document.createElement("script");s.async=true;s.src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID="+u;document.body.appendChild(s);}
+ev.forEach(function(e){window.addEventListener(e,load,{passive:true});});})();</script>
+</body>
+</html>
